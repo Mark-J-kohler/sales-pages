@@ -1495,6 +1495,16 @@
     // Exclude the dynamic call to action link (starts with https://markjkohler.com/product/become-a-certified-tax-advisor/)
     const startOfCTAURL = 'https://markjkohler.com/product/become-a-certified-tax-advisor/';
     filteredLinks = filteredLinks.filter(link => !link.href.startsWith(startOfCTAURL));
+    // remove the book a demo links as they are CTA's as well
+    const bookADemoURL = 'https://markjkohler.as.me/'
+    filteredLinks = filteredLinks.filter(link => !link.href.startsWith(bookADemoURL))
+
+    // remove all links that have a javascript declaration or script inside the href
+    filteredLinks = filteredLinks.filter(link => !link.href.includes('javascript:'));
+
+    //remove any link that use # as href
+    filteredLinks = filteredLinks.filter(link => !link.href.includes('#'));
+
     // Add event listener to all links
     filteredLinks.forEach(link => {
         link.addEventListener('click', (e) => {
