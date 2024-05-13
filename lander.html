@@ -115,7 +115,6 @@
                     <li>Extensive Content Library with Forms &amp; Resources</li>
                     <li>Access to Mark's Exclusive Tax Advisor Network<span class="new">new</span></li>
                 </ul>
-                <p><a href="https://clevoro.com">Example Link</a></p>
                 <div class="common__btn_box">
                     <div class="common__btn_width">
                         <p class="common__btn_caption"><img
@@ -1541,7 +1540,7 @@
   // Add event listener to all links
   filteredLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-      const { target, href } = link
+      const { href } = link
 
       e.preventDefault()
       // if the user clicks on a link that isn't a page scroll link or the CTA link, show the popup
@@ -1557,7 +1556,6 @@
           allowOutsideClick: false,
           allowEscapeKey: false,
           allowEnterKey: false,
-          showCloseButton: true,
           showClass: {
             popup: 'swal2-noanimation',
             backdrop: 'swal2-noanimation'
@@ -1569,9 +1567,10 @@
         }).then((result) => {
           if (result.isConfirmed) {
             alertShown = true
-          }
-          if (result.isDenied) {
+          } else if (result.isDismissed) {
             window.location.href = href
+          } else {
+            window.location.href
           }
         })
       } else {
