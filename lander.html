@@ -23,18 +23,18 @@
     </style>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || [];
+      w[l] = w[l] || []
       w[l].push({
         'gtm.start':
           new Date().getTime(), event: 'gtm.js'
-      });
+      })
       var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''
+      j.async = true
       j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KL4KCRP');</script>
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+      f.parentNode.insertBefore(j, f)
+    })(window, document, 'script', 'dataLayer', 'GTM-KL4KCRP')</script>
     <!-- Mida A/B Testing Script -->
     <script type="text/javascript" async src="https://cdn.mida.so/js/optimize.js?key=5Vxqa3ZlROZO6YgJzOv1b0"></script>
 </head>
@@ -115,6 +115,7 @@
                     <li>Extensive Content Library with Forms &amp; Resources</li>
                     <li>Access to Mark's Exclusive Tax Advisor Network<span class="new">new</span></li>
                 </ul>
+                <p><a href="https://clevoro.com">Example Link</a></p>
                 <div class="common__btn_box">
                     <div class="common__btn_width">
                         <p class="common__btn_caption"><img
@@ -1150,7 +1151,8 @@
             <div class="up-slide-dwn">
                 <div class="accordion acdn-heading accordion-close">What is a Demo?</div>
                 <div class="acdn-content" style="display: none;">
-                    <p class="acdn-para">Its just a 15 min Zoom call with a representative that will show you around the certification course and answer any questions you might have!</p>
+                    <p class="acdn-para">Its just a 15 min Zoom call with a representative that will show you around the
+                        certification course and answer any questions you might have!</p>
                 </div>
             </div>
 
@@ -1209,8 +1211,8 @@
         </p>
         <p class="footer__text">&copy;
             <script type="text/javascript">
-              var year = new Date();
-              document.write(year.getFullYear());
+              var year = new Date()
+              document.write(year.getFullYear())
             </script>
             Mark J. Kohler - All rights reserved.
         </p>
@@ -1218,7 +1220,8 @@
 </div>
 
 <!--Mobile Monkey Script-->
-<script async="async" src="https://static.mobilemonkey.com/js/mm_1c2a23a0-1123-4ed7-9a05-e585103dc888-10915567.js"></script>
+<script async="async"
+        src="https://static.mobilemonkey.com/js/mm_1c2a23a0-1123-4ed7-9a05-e585103dc888-10915567.js"></script>
 
 <!--Imported Scripts-->
 <script type="text/javascript"
@@ -1238,9 +1241,9 @@
 <script type="text/javascript" id="interactive-elements">
   $(document).ready(function () {
     $('.menu-icon-mobile, ul.mobile-menu li a').click(function (e) {
-      $('.mobile-menu').slideToggle();
-      $('.dl-trigger').toggleClass('dl-active');
-    });
+      $('.mobile-menu').slideToggle()
+      $('.dl-trigger').toggleClass('dl-active')
+    })
     $('.featured__icons_box').slick({
       dots: false,
       slidesToScroll: 1,
@@ -1248,7 +1251,7 @@
       arrows: false,
       responsive: [{
         breakpoint: 9999,
-        settings: "unslick"
+        settings: 'unslick'
       },
         {
           breakpoint: 767,
@@ -1263,112 +1266,111 @@
           }
         }
       ]
-    });
+    })
 
-    function replacePreviewWithYoutTubeVideo() {
-      var youtubeIframe = '<div class="responsive-iframe-container"><iframe src="https://www.youtube.com/embed/o3dI48MAOyA?si=45-wVKmpg-I9PAGu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
-      $('.s1__thumbnail').replaceWith(youtubeIframe);
+    function replacePreviewWithYoutTubeVideo () {
+      var youtubeIframe = '<div class="responsive-iframe-container"><iframe src="https://www.youtube.com/embed/o3dI48MAOyA?si=45-wVKmpg-I9PAGu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>'
+      $('.s1__thumbnail').replaceWith(youtubeIframe)
     }
 
     $('.s1__thumbnail').click(function (e) {
-      replacePreviewWithYoutTubeVideo();
-    });
+      replacePreviewWithYoutTubeVideo()
+    })
 
-
-    function startTimer(duration, display) {
+    function startTimer (duration, display) {
       var timer = duration,
-        minutes, seconds;
+        minutes, seconds
       setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-        display.text(minutes + ":" + seconds);
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10)
+        minutes = minutes < 10 ? '0' + minutes : minutes
+        seconds = seconds < 10 ? '0' + seconds : seconds
+        display.text(minutes + ':' + seconds)
         if (--timer < 0) {
-          timer = duration;
+          timer = duration
         }
-      }, 1000);
+      }, 1000)
     }
 
     $('.countdown').each(function () {
-      var time = $(this).text().split(':');
-      var duration = parseInt(time[0]) * 60 + parseInt(time[1]);
-      startTimer(duration, $(this));
-    });
+      var time = $(this).text().split(':')
+      var duration = parseInt(time[0]) * 60 + parseInt(time[1])
+      startTimer(duration, $(this))
+    })
     $('.s3__acdn_head').click(function (e) {
-      var thisDiv = $(this).next('.s3__acdn_content');
-      if ($(thisDiv).is(":visible")) {
-        $(this).next('.s3__acdn_content').slideUp();
-        $(this).removeClass('active');
+      var thisDiv = $(this).next('.s3__acdn_content')
+      if ($(thisDiv).is(':visible')) {
+        $(this).next('.s3__acdn_content').slideUp()
+        $(this).removeClass('active')
       } else {
-        $('.s3__acdn_content').slideUp();
-        $(this).next('.s3__acdn_content').slideDown();
-        $('.s3__acdn_head').removeClass('active');
-        $(this).addClass('active');
+        $('.s3__acdn_content').slideUp()
+        $(this).next('.s3__acdn_content').slideDown()
+        $('.s3__acdn_head').removeClass('active')
+        $(this).addClass('active')
       }
-    });
+    })
     $('.s5__col').click(function (e) {
-      $('.s5__col').removeClass('active');
-      $(this).addClass('active');
-    });
+      $('.s5__col').removeClass('active')
+      $(this).addClass('active')
+    })
     $('.s5-col-1').click(function (e) {
-      $('.video-col1').html('<iframe src="https://player.vimeo.com/video/832071974?h=0b08111d33&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Marge"></iframe>');
-    });
+      $('.video-col1').html('<iframe src="https://player.vimeo.com/video/832071974?h=0b08111d33&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Marge"></iframe>')
+    })
     $('.s5-col-2').click(function (e) {
-      $('.video-col1').html('<iframe src="https://player.vimeo.com/video/832071931?h=54bf8d8444&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Marge"></iframe>');
-    });
+      $('.video-col1').html('<iframe src="https://player.vimeo.com/video/832071931?h=54bf8d8444&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Marge"></iframe>')
+    })
     $('.s5-col-3').click(function (e) {
-      $('.video-col1').html('<iframe src="https://player.vimeo.com/video/832071870?h=3c6257e208&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Marge"></iframe>');
-    });
+      $('.video-col1').html('<iframe src="https://player.vimeo.com/video/832071870?h=3c6257e208&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Marge"></iframe>')
+    })
     $('.s5-col-4').click(function (e) {
-      $('.video-col1').html('<iframe src="https://player.vimeo.com/video/832071847?h=2d38f2238c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Marge"></iframe>');
-    });
+      $('.video-col1').html('<iframe src="https://player.vimeo.com/video/832071847?h=2d38f2238c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Marge"></iframe>')
+    })
     $('.s7__package__row').click(function (e) {
-      $('.s7__package__row').removeClass('active');
-      $(this).addClass('active');
+      $('.s7__package__row').removeClass('active')
+      $(this).addClass('active')
       if ($(window).innerWidth() < 767) {
         bookmarkscroll.scrollTo('chooseColr')
       }
-    });
-    $('.header__menu').scroller();
+    })
+    $('.header__menu').scroller()
     //accordion JS
-    $(".accordion").click(function () {
-      var questionDiv = $(this);
-      var answerDiv = $(this).next('.acdn-content');
-      var idx = $('.acdn-content').index(answerDiv);
+    $('.accordion').click(function () {
+      var questionDiv = $(this)
+      var answerDiv = $(this).next('.acdn-content')
+      var idx = $('.acdn-content').index(answerDiv)
       $('.acdn-content').each(function (index, ansDiv) {
         if (index != idx && $(ansDiv).is(':visible')) {
           $(ansDiv).slideUp(500, function () {
-            $(ansDiv).prev('.accordion').removeClass('accordion-open');
-          });
+            $(ansDiv).prev('.accordion').removeClass('accordion-open')
+          })
         }
-      });
+      })
       if (answerDiv.is(':visible')) {
         answerDiv.stop().slideUp(500, function () {
-          questionDiv.removeClass('accordion-open');
-        });
+          questionDiv.removeClass('accordion-open')
+        })
       } else {
-        questionDiv.addClass('accordion-open');
-        answerDiv.stop().slideDown(500);
+        questionDiv.addClass('accordion-open')
+        answerDiv.stop().slideDown(500)
       }
-    });
-  });
+    })
+  })
 </script>
 <script type="text/javascript" id="mobile-view-fix">
   $(document).scroll(function () {
     //Fixed Menu Bar
     if ($(this).scrollTop() > 110) {
-      $('.header').addClass('fixed-nav');
+      $('.header').addClass('fixed-nav')
     } else {
-      $('.header').removeClass('fixed-nav');
+      $('.header').removeClass('fixed-nav')
     }
     //Fixed Mobile Menu
     if ($(this).scrollTop() > 10) {
-      $('.mobile-menu').addClass('mobimenu-top');
+      $('.mobile-menu').addClass('mobimenu-top')
     } else {
-      $('.mobile-menu').removeClass('mobimenu-top');
+      $('.mobile-menu').removeClass('mobimenu-top')
     }
-  });
+  })
 </script>
 <script type="text/javascript" id="product-selection">
   let choices = {
@@ -1389,7 +1391,7 @@
   }]
 
   const marshallURL = () => {
-    const {membership, certification} = choices
+    const { membership, certification } = choices
     const certId = products.find(product => product.name === certification).id
     const queryParams = `?add-to-cart=${certId}${membership ? `,${products.find(p => p.name === 'membership').id}` : ''}`
     document.querySelector('.s7__button').href = `https://markjkohler.com/product/become-a-certified-tax-advisor/${queryParams}`
@@ -1397,13 +1399,13 @@
   marshallURL()
 
   // if the user selects the vip membership option, push an object with a key value pair of membership: vip, else remove the object from the array
-  membershipOption.addEventListener('change', ({target}) => {
+  membershipOption.addEventListener('change', ({ target }) => {
     choices.membership = target.checked
     marshallURL()
   })
   // there are two options for the certificaiton, one-time or payments; if the user selects one-time, push an object with a key value pair of certification: one-time, else push an object with a key value pair of certification: monthly
   Array.from(certificationChoice).forEach(choice => {
-    choice.addEventListener('change', ({target}) => {
+    choice.addEventListener('change', ({ target }) => {
       if (target.checked) {
         choices.certification = target.dataset.type === 'one-time' ? 'one-time' : 'monthly'
         marshallURL()
@@ -1412,9 +1414,9 @@
   })
 </script>
 <script type="text/javascript" id="modals">
-  const termsLink = document.getElementById('termsLink');
-  const privacyLink = document.getElementById('privacyLink');
-  const contactLink = document.getElementById('contactLink');
+  const termsLink = document.getElementById('termsLink')
+  const privacyLink = document.getElementById('privacyLink')
+  const contactLink = document.getElementById('contactLink')
 
   termsLink.addEventListener('click', (e) => {
     e.preventDefault()
@@ -1438,108 +1440,145 @@
 <!--Tracking Snippets-->
 <!-- SegMetrics -->
 <script type="text/javascript" id="SegMetrics-snippet">
-  var _segq = _segq || [];
+  var _segq = _segq || []
   var _segs = _segs || {};
   (function () {
-    var dc = document.createElement('script');
-    dc.type = 'text/javascript';
-    dc.async = true;
-    dc.src = '//tag.segmetrics.io/aE2xL3.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(dc, s);
-  })();
+    var dc = document.createElement('script')
+    dc.type = 'text/javascript'
+    dc.async = true
+    dc.src = '//tag.segmetrics.io/aE2xL3.js'
+    var s = document.getElementsByTagName('script')[0]
+    s.parentNode.insertBefore(dc, s)
+  })()
 </script>
 <!-- SegMetrics END -->
 <script id="zoom-info-snippet">
   window[(function (_L97, _sA) {
-    var _YwKZF = '';
+    var _YwKZF = ''
     for (var _l9lgJI = 0; _l9lgJI < _L97.length; _l9lgJI++) {
-      _YwKZF == _YwKZF;
-      var _t9OI = _L97[_l9lgJI].charCodeAt();
-      _t9OI != _l9lgJI;
-      _t9OI -= _sA;
-      _sA > 1;
-      _t9OI += 61;
-      _t9OI %= 94;
-      _t9OI += 33;
+      _YwKZF == _YwKZF
+      var _t9OI = _L97[_l9lgJI].charCodeAt()
+      _t9OI != _l9lgJI
+      _t9OI -= _sA
+      _sA > 1
+      _t9OI += 61
+      _t9OI %= 94
+      _t9OI += 33
       _YwKZF += String.fromCharCode(_t9OI)
     }
     return _YwKZF
-  })(atob('bVxjJyR9eHYpXngu'), 19)] = '1d527890c51695853087';
+  })(atob('bVxjJyR9eHYpXngu'), 19)] = '1d527890c51695853087'
   var zi = document.createElement('script');
   (zi.type = 'text/javascript'), (zi.async = true), (zi.src = (function (_8G0, _XV) {
-    var _gxLJ6 = '';
+    var _gxLJ6 = ''
     for (var _5RqEba = 0; _5RqEba < _8G0.length; _5RqEba++) {
-      var _Owig = _8G0[_5RqEba].charCodeAt();
-      _Owig -= _XV;
-      _Owig += 61;
-      _gxLJ6 == _gxLJ6;
-      _Owig %= 94;
-      _Owig += 33;
-      _XV > 2;
-      _Owig != _5RqEba;
+      var _Owig = _8G0[_5RqEba].charCodeAt()
+      _Owig -= _XV
+      _Owig += 61
+      _gxLJ6 == _gxLJ6
+      _Owig %= 94
+      _Owig += 33
+      _XV > 2
+      _Owig != _5RqEba
       _gxLJ6 += String.fromCharCode(_Owig)
     }
     return _gxLJ6
   })(atob('b3t7d3pBNjZxejUjcDR6anlwd3t6NWp2dDYjcDR7aG41cXo='), 7)), document.readyState === 'complete' ? document.body.appendChild(zi) : window.addEventListener('load', function () {
     document.body.appendChild(zi)
-  });
+  })
 </script>
 
 <!--Click off Detection Popup-->
 <script id="click-off-detection-popup" type="application/javascript">
-    // Get all links from the page
-    let allLinks = document.querySelectorAll('a');
-    // filter out all links with a non url href or no href at all
-    let filteredLinks = Array.from(allLinks).filter(link => link.href && link.href !== '#');
-    // Exclude the dynamic call to action link (starts with https://markjkohler.com/product/become-a-certified-tax-advisor/)
-    const startOfCTAURL = 'https://markjkohler.com/product/become-a-certified-tax-advisor/';
-    filteredLinks = filteredLinks.filter(link => !link.href.startsWith(startOfCTAURL));
-    // remove the book a demo links as they are CTA's as well
-    const bookADemoURL = 'https://markjkohler.as.me/'
-    filteredLinks = filteredLinks.filter(link => !link.href.startsWith(bookADemoURL))
+  // detect if alert has already been shown once
+  let alertShown = false
 
-    // remove all links that have a javascript declaration or script inside the href
-    filteredLinks = filteredLinks.filter(link => !link.href.includes('javascript:'));
+  document.addEventListener('mouseout', e => {
+    if (!alertShown) {
+      if (!e.relatedTarget || e.relatedTarget.nodeName === 'HTML') {
+        alertShown = true
+        Swal.fire({
+          title: 'Wait!',
+          text: 'Before you go, we have a special offer for you!',
+          showCancelButton: false,
+          confirmButtonText: 'Ok, I will look at the offer',
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          allowOutsideClick: false,
+          allowEscapeKey: false,
+          allowEnterKey: false,
+          showCloseButton: true,
+          showClass: {
+            popup: 'swal2-noanimation',
+            backdrop: 'swal2-noanimation'
+          },
+          hideClass: {
+            popup: '',
+            backdrop: ''
+          }
+        })
+      }
+    }
+  })
 
-    //remove any link that use # as href
-    filteredLinks = filteredLinks.filter(link => !link.href.includes('#'));
+  // Get all links from the page
+  let allLinks = document.querySelectorAll('a')
+  // filter out all links with a non url href or no href at all
+  let filteredLinks = Array.from(allLinks).filter(link => link.href && link.href !== '#')
+  // Exclude the dynamic call to action link (starts with https://markjkohler.com/product/become-a-certified-tax-advisor/)
+  const startOfCTAURL = 'https://markjkohler.com/product/become-a-certified-tax-advisor/'
+  filteredLinks = filteredLinks.filter(link => !link.href.startsWith(startOfCTAURL))
+  // remove the book a demo links as they are CTA's as well
+  const bookADemoURL = 'https://markjkohler.as.me/'
+  filteredLinks = filteredLinks.filter(link => !link.href.startsWith(bookADemoURL))
 
-    // Add event listener to all links
-    filteredLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-          const {target, href} = link
+  // remove all links that have a javascript declaration or script inside the href
+  filteredLinks = filteredLinks.filter(link => !link.href.includes('javascript:'))
 
-          e.preventDefault()
-          // if the user clicks on a link that isn't a page scroll link or the CTA link, show the popup
-          Swal.fire({
-            title: 'Wait!',
-            text: 'Before you go, we have a special offer for you!',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, I want to see the offer',
-            cancelButtonText: 'No, I am not interested',
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            allowOutsideClick: false,
-            allowEscapeKey: false,
-            allowEnterKey: false,
-            showCloseButton: true,
-            showClass: {
-              popup: 'swal2-noanimation',
-              backdrop: 'swal2-noanimation'
-            },
-            hideClass: {
-              popup: '',
-              backdrop: ''
-            }
-          }).then((result) => {
-            console.log(result.isConfirmed)
-            if (!result.isConfirmed) {
-              window.location.href = href;
-            }
-          });
-        });
-    });
+  //remove any link that use # as href
+  filteredLinks = filteredLinks.filter(link => !link.href.includes('#'))
+
+  // Add event listener to all links
+  filteredLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const { target, href } = link
+
+      e.preventDefault()
+      // if the user clicks on a link that isn't a page scroll link or the CTA link, show the popup
+      if (!alertShown) {
+        Swal.fire({
+          title: 'Wait!',
+          text: 'Before you go, we have a special offer for you!',
+          showCancelButton: true,
+          confirmButtonText: 'Yes, I want to see the offer',
+          cancelButtonText: 'No, I am not interested',
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          allowOutsideClick: false,
+          allowEscapeKey: false,
+          allowEnterKey: false,
+          showCloseButton: true,
+          showClass: {
+            popup: 'swal2-noanimation',
+            backdrop: 'swal2-noanimation'
+          },
+          hideClass: {
+            popup: '',
+            backdrop: ''
+          }
+        }).then((result) => {
+          if (result.isConfirmed) {
+            alertShown = true
+          }
+          if (result.isDenied) {
+            window.location.href = href
+          }
+        })
+      } else {
+        window.location.href = href
+      }
+    })
+  })
 </script>
 
 <!-- Google Tag Manager (noscript) -->
