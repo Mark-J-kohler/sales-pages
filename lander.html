@@ -115,6 +115,7 @@
                     <li>Extensive Content Library with Forms &amp; Resources</li>
                     <li>Access to Mark's Exclusive Tax Advisor Network<span class="new">new</span></li>
                 </ul>
+                <!--<p><a href="https://clevoro.com">Example Link</a></p>-->
                 <div class="common__btn_box">
                     <div class="common__btn_width">
                         <p class="common__btn_caption"><img
@@ -1568,13 +1569,13 @@
           if (result.isConfirmed) {
             alertShown = true
           } else if (result.isDismissed) {
-            window.location.href = href
+            window.open(href, '_blank')
           } else {
-            window.location.href
+            window.open(href, '_blank')
           }
         })
       } else {
-        window.location.href = href
+        window.open(href, '_blank')
       }
     })
   })
